@@ -1,0 +1,155 @@
+
+body{
+  max-width: 100%;
+}
+.navbar {
+    background-color: #dd3b6c;
+    height: 3px;;
+    max-width: 100%;
+    margin-top: 15px;
+    
+}
+ body {
+  max-width: 100%;
+  overflow-x: hidden;
+ 
+}
+
+.home{
+  padding: 15px;
+}
+
+.home p {
+  width: 75%;
+  text-align: justify;
+  line-height: 30px;
+  font-size: large;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.home1{
+  display: flex;
+}
+
+.home1 img {
+  width: 300px;;
+  float: left;
+}
+.team {
+  display: grid;
+  grid-template-columns: auto auto auto auto  ;
+  gap: 10px;
+  border-radius: 20px;
+  max-width: 90%;
+  padding: 30px;
+  box-shadow: 10px 8px 10px 10px rgba(0, 0, 0, 0.2), 0 8px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.gallery {
+    margin: 10px;
+    border: 0px solid rgb(158, 157, 157);
+    border-radius:0px 20px 0px 0px;
+    width: 180px;
+    padding-top: 10px;
+    box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.2), 0 8px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.gallery:hover {
+    border: 0px solid rgb(170, 31, 31);
+    box-shadow: 0 4px 8px 0 rgba(241, 187, 8, 0.2), 0 8px 20px 0 rgba(226, 20, 20, 0.19);
+  }
+
+.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+.desc{
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.table{
+  font-family: arial, sans-serif;
+  width: 100%;
+  padding: 0 20px;
+}
+table{
+  border-collapse: collapse;
+  margin-bottom: 100px;
+  background-color: lightgray;
+ 
+}
+.table td,th {
+  border: 3px solid #dddddd;
+  text-align: center;
+  padding: 10px;
+  color: black;
+}
+
+
+
+.footer{
+  background-color: black;
+  width: 100%;
+  
+}
+
+.footer p{
+  color: grey;
+  text-align: center;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 15px;
+  padding-bottom: 10px;
+}
+
+.footer1 img{
+  width: 60px;
+  height: 60px;
+  padding : 25px 0 0 60px;
+}
+
+.footer1 h5{
+ font-size: 15px;
+ margin-left: 20px;
+ margin-top: 0px;
+ color: rgb(177, 169, 169);
+}
+.footer2{
+  background-color: black;
+  height: auto;
+  text-align: center;
+  padding: 10px 0 0 0;
+
+
+}
+
+.footer2 i:hover{
+  color: red;
+}
+
+.footer i{
+font-size: 30px;
+padding: 0 10px;
+color: white;
+
+}
+
+.line{
+  width: 100%;
+}
+
+aside {
+  width: 30%;
+  padding: 15px;
+  margin: 15px;
+  float: right;
+  font-style: italic;
+  background-color: lightgray;
+}
+
+
+
+
+/* Javascript */
+
