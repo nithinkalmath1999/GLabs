@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+
+
+        //switch statement
+        // let a = Number (prompt('a?', ''));
+
+        // switch (a)
+        // {
+        // case 0:
+        // alert(0);
+        // break;
+
+        // case 1:
+        // alert(1);
+        // break;
+
+        // case 2:
+        // case 3:
+        // alert('2,3');
+        // }
+
+        // comparision
+
+        // alert( '' == false ); // "true' (different types are converted to numbers by the equality operator ==. An empty string, just like false, becomes a zero.)
+
+        // alert('' === false); // 'false' (if a and b are of different types, then a === b immediately returns false without an attempt to convert them.)
+
+        //functions
+        // let userName='Nithin';
+
+        // function showMessage(){
+        //     alert("Hello "+ userName);
+        // }
+        // showMessage();
+
+
+        // functions
+        // function checkAge(age){
+        //     if(age>=22){
+        //         return true;
+        //     }
+        //     else{
+        //         return confirm("Do you have permission from your parents?");
+        //     }
+        // }
+
+        // let age=prompt("What is your aage? ",22);
+        // if (checkAge(age)){
+        //     alert("Access Granted");
+        // }else{
+        //     alert("Access Denied");
+        // } 
+
+
+        // function showMessage(from, text = "no text given") {
+        // alert( from + ": " + text );
+        // }
+        // showMessage("Nkm");
+
+
+
+        //function expression and arrow functions
+
+        // let userValue = prompt('enter the number','');
+        // let result = positiveOrNegative(userValue);
+
+        // function positiveOrNegative(userValue){
+        //     if(userValue<0){
+        //         return "negative";
+        //     }
+        //     else{
+        //         return "positive";
+        //     }
+        // }
+        // alert(result);
+
+        // function
+        // function demo(){
+        //     alert('Hello World');
+        // }
+        // demo();
+
+        //arrow function
+        // let demo = (a) => alert(a);
+        // demo('nkm');
+
+        // multiline arrow function
+        // let userValue = prompt('enter the number');
+        // let result = (userValue<0) ? 
+        // ()=> alert("negative") : 
+        // ()=> alert("Positive");
+        // result();
+
+        //prime number using arrow function
+
+        // let num = prompt ("enter the number");
+        // let c=0;
+        // let res = num =>{
+        //     for (i=0;i<=num;i++)
+        // {
+        //     if(num%i==0){
+        //         c++;
+        //     }
+        // }
+        // if(c==2) {
+        //     alert("Prime number")
+        // }
+        //     else{
+        //         alert ("Not a prime number");
+        //     }
+        // }
+        // res(num);
+
+
+        //objects
+
+        //     let user = {     
+        //     name: "Nithin",  
+        //     age: 23     
+        //   };
+        //   user.loc="Bellary";
+        //   alert( user.age );
+        //   alert( user.loc );
+        //   delete user.age;
+
+
+        //WAP Generate a Random Number
+        // const a = Math.floor(Math.random()*(100-1))+1;
+        // alert(a);
+
+        //Simple Calculator
+
+        //     let num1 = +prompt("enter the num1");
+        //     let num2 = +prompt("enter the num2");
+        //     let op = prompt("Enter the operator");
+        //     function calculate(){
+        //         switch(op)
+        //     {
+        //         case "+" : return ( num1 + num2);
+        //         case "-" : return ( num1 - num2);
+        //         case "/" : return ( num1 / num2);
+        //         case "*" : return ( num1 * num2);
+        //     }
+        // }
+        //  alert(calculate());
+
+
+        //WAP to check whether the given numbers have same last digit
+
+        // let a = +prompt('enter the 1st num');
+        // let b = +prompt('enter the 2nd num');
+
+        // if(a%10 == b%10)
+        // alert('Same');
+        // else
+        // alert('Not Same');
+
+        //WAP to check whether the given numbers have same first digit
+
+        // let a = +prompt('enter the 1st num');
+        // let b = +prompt('enter the 2nd num');
+
+        // while (a > 10) 
+        //     a = parseInt(a / 10);
+        // while (b > 10) 
+        //     b = parseInt(b / 10);
+
+        // if (a == b) alert('Same');
+        // else alert('Not Same');
+
+
+        //Amstrong number
+
+        // let num = +prompt("Enter the num");
+        // let num1 = num;
+        // let num2 = num;
+        // let rem, count = 0, i, sum = 0, mul;
+        // while (num) {
+        //     num = parseInt(num / 10);
+        //     count++;
+        // }
+        // while (num1) {
+        //     rem = num1 % 10;
+        //     mul = 1;
+        //         for (i = 1; i <= count; i++) {
+        //             mul = mul * rem;
+        //         }
+        //     num1 = parseInt(num1 / 10);
+        //     sum = sum + mul;
+        // }
+        // if (sum == num2) {
+        //     alert('Amstrong');
+        // }
+        // else alert('Not Amstrong');
+
+
+        //Program to compute the sum of the two given integers. If the two values are same, then returns triple their sum.
+
+
+        // let num1 = +prompt("enter the num1");
+        // let num2 = +prompt("enter the num2");
+
+        // function triple()
+        // {
+        //     if(num1 == num2)
+        //     return ((num1 + num2) * 3);
+        //     else
+        //     return (num1 + num2);
+        // }
+        // alert (triple());
+
+        //Program to compute the sum of the two given integers, If the sum is in the range 50..80 return 65 other wise return 80.
+
+        // let n1 = +prompt("enter the n1");
+        // let n2 = +prompt("enter the n2");
+
+        // let sum = n1 + n2;
+        // if ( sum >=50 && sum<=80)
+        // {
+        //     alert ("65");
+        // }
+        // else alert("80");
+
+
+        //Program to create a new string adding "Ja" in front of a given string. If the given string begins with "Ja" then return the original string.
+
+        // let str = prompt('enter the string');
+        //  let sub = str.substr(0,2);
+        //  if (sub === 'Ja')
+        //  alert(str);
+        //  else alert('Ja' + str);
+
+        //You will be given 2 parameters: a low and high number. Your goal is to print all numbers between low and high, and for each of these numbers print whether or not the number is divisible by 3. If the number is divisible by 3, print the word "div3" directly after the number.
+
+        // let low = prompt("enter the num");
+        // let high = prompt("enter the num");
+
+        // for(i=low;i<high;i++)
+        // {
+        //     if(i%3==0)
+        //     {
+        //         alert(i + 'div3');
+        //     }
+        //     else{
+        //         alert(i);
+        //     }
+        // }
+
+        //Create a for loop that iterates up to 100 while outputting "fizz" at multiples of 3, "buzz" at multiples of 5 and "fizzbuzz" at multiples of 3 and 5
+
+
+        // let num = prompt("enter the num");
+
+
+        // for(i=num;i<=100;i++)
+        // {
+        //     if(i%3==0 && i%5==0)
+        //     {
+        //         alert('Fizzbuzz');
+        //     }
+        //     else if(i%3==0)
+        //     {
+        //         alert('fizz');
+        //     }
+        //     else if(i%5==0){
+        //         alert('buzz');
+        //     }
+        //     else if (i%3==0 && i%5==0)
+        //     {
+        //         alert('Fizzbuzz');
+        //     }
+        //     else{
+        //         alert(i);
+        //     }
+        // }
+
+
+
+        //WAP to swap two variables without using third variable.
+
+        // let a = +prompt();
+        // let b = +prompt();
+
+        // a = a + b;
+        // b = a - b;
+        // a = a - b;
+        // alert("a=" + a + " b = " + b);
+
+
+
+        
+    </script>
+</body>
+
+</html>
