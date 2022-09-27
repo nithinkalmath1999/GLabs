@@ -1,9 +1,9 @@
 var PI = 3.14;
 var MAX_SIZE = 100;
-var x = 10;
-var y = 5;
-x = x + y;
-y = x - y;
-x = x - y;
-console.log(x, y);
+var m = 10;
+var n = 5;
+m = m + n;
+n = m - n;
+m = m - n;
+console.log(m, n);
 //# sourceMappingURL=letVsConst.js.map
