@@ -1,0 +1,12 @@
+h1{
+    text-align: center;
+    color: blue;
+}
+
+button{
+    display: inline;
+    margin: auto;
+    width: 180px;
+    padding: 10px;
+    cursor: pointer;
+}
