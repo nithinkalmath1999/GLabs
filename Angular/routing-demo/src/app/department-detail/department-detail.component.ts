@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, ParamMap } from '@angular/router';
-import { Router } from '@angular/router';
+import { Component, Directive, OnInit } from '@angular/core';
+import { ActivatedRoute, ParamMap, Router} from '@angular/router';
+// import { Router } from '@angular/router';
 
 
 @Component({
@@ -10,10 +10,16 @@ import { Router } from '@angular/router';
     <button (click)="goPrevious()">Previous</button> || 
     <button (click)="goNext()">Next</button><br><br>
     <div><button (click)="goBack()">Back</button></div> 
+    
   `,
   styles: [
   ]
 })
+
+// @Directive({
+//   selector: '[hostBindingDemo]'
+// })
+
 export class DepartmentDetailComponent implements OnInit {
   public id1: any;
   // public name:any;
@@ -36,7 +42,7 @@ export class DepartmentDetailComponent implements OnInit {
     let previousId = parseInt(this.id1) - 1;
     this.router.navigate(['/departments', previousId])
   }
-  
+
   goNext() {
     let nextId = parseInt(this.id1) + 1;
     this.router.navigate(['/departments', nextId])

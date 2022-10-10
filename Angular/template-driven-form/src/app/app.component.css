@@ -1,0 +1,75 @@
+* {
+  
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  .container {
+    margin: auto;
+    max-width: 380px;
+    padding: 40px;
+    
+  }
+
+  .form-wrap {
+
+    background-color: #d1cfcf;
+    padding: 20px;
+    
+  }
+  .form-wrap h2{
+    text-align: center;
+    padding: 5px;
+
+  }
+
+  .form-wrap .form-group {
+    margin-top: 10px;
+    padding: 5px;
+  }
+
+  .form-wrap .form-group label {
+   
+    display: block;
+    padding-bottom: 5px;
+  }
+  .form-wrap .form-group1 label {
+   
+    margin: 5px;
+
+
+  }
+
+  
+  .form-wrap .form-group input {
+    
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;    
+    
+  }
+  .form-wrap button {
+
+    background-color: #4987c1;
+    display: block;
+    width: 100%;
+    border: none;
+    margin-top: 12px;
+    padding: 3px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+
+  }
+
+  .form-wrap button:hover {
+   
+    background-color: #3a5c9b;
+  }
+
+  .checkbox{
+    text-align: center;
+    font-size: small;
+    padding-top: 10px;
+  }
