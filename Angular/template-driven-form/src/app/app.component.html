@@ -1,7 +1,7 @@
 <div class="container">
     <div class="form-wrap">
-        <h2>Demo-Form</h2>
-        <form  #userForm="ngForm"  >
+        <h2>Feedback form</h2>
+        <form  #userForm="ngForm" (ngSubmit)="onSubmit()"  >
 
 
             <div class="form-group">
@@ -50,8 +50,8 @@
                 <label>Allow notifications</label>
             </div>
             <!-- <button type="submit" name="submit" [disabled]="!userForm.valid" >Submit</button> -->
-              <button type="submit" name="submit"  >Submit</button>
- 
+              <button type="submit" name="submit" [disabled]="!userForm.valid" (click)="submit()">Submit</button>
+
         </form>
     </div>
 </div>

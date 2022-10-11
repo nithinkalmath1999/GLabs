@@ -9,6 +9,15 @@ import { User } from './user';
 export class AppComponent {
   title = 'template-driven-form';
 
-  userModel = new User('','',8861144715, 22,'','',true);
-  
+  userModel = new User('','',8162193515, 22,'','',true);
+
+  submitted = false;
+
+  onSubmit() {
+     this.submitted = true;
+     }
+
+     submit(){
+      alert("subitted");
+     }
 }
