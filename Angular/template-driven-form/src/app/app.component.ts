@@ -9,5 +9,6 @@ import { User } from './user';
 export class AppComponent {
   title = 'template-driven-form';
 
-  userModel = new User('nithin','abc@gmail.com',8861144715,'18-25','',)
+  userModel = new User('','',8861144715, 22,'','',true);
+  
 }

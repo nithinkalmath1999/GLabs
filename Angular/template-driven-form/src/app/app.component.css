@@ -6,7 +6,7 @@
   }
   .container {
     margin: auto;
-    max-width: 380px;
+    max-width: 400px;
     padding: 40px;
     
   }
@@ -67,9 +67,21 @@
    
     background-color: #3a5c9b;
   }
-
+#comment{
+  width: 270px;
+  height: 80px;
+  text-align: left;
+}
   .checkbox{
     text-align: center;
     font-size: small;
     padding-top: 10px;
+  }
+  textarea{
+    resize: none;
+  }
+
+  span{
+    color: red;
+    font-size: small;
   }

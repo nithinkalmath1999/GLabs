@@ -3,8 +3,9 @@ export class User {
         public name : string,
         public email: string,
         public phone : number,
-        public age : string,
-        public time : string,
+        public age : number,
+        public gender : string,
+        public comment : string,
         public accept : boolean
     ) {}
 
