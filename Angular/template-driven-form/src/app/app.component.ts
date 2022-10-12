@@ -11,13 +11,9 @@ export class AppComponent {
 
   userModel = new User('','',8162193515, 22,'','',true);
 
-  submitted = false;
+  
 
   onSubmit() {
-     this.submitted = true;
-     }
-
-     submit(){
-      alert("subitted");
+     alert("submitted");
      }
 }
