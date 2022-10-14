@@ -1,0 +1,119 @@
+* {
+  
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  .container {
+    margin: auto;
+    max-width: 500px;
+    padding: 20px;
+    background: #d3dfdf;
+    margin-top: 60px;
+    border-radius: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  }
+
+  .ls{
+    float: left;
+    width: 60%;
+  }
+
+  .rs{
+    float: right;
+    width: 40%;
+
+  }
+  .form-wrap {
+    background-color:#9cc5c4;
+    padding: 20px;
+    
+    
+  }
+  .form-wrap h2{
+    text-align: center;
+    padding:5px;
+    color: white;
+
+  }
+
+  .form-wrap .form-group {
+    margin-top: 10px;
+    padding: 5px;
+  }
+
+  .form-wrap .form-group1{
+    margin-top: 10px;
+  }
+  .form-wrap .form-group label {
+   
+    display: block;
+    padding-bottom: 5px;
+  }
+
+  .form-wrap .form-group input {
+    
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    /* border: none;     */
+    border:1px solid white;
+    
+  }
+
+  #submit {
+    background-color: #4987c1;
+    width: 140px;
+    border: none;
+    margin-left:30%;
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+  }
+
+  #submit:hover {
+   
+    background-color: #3a5c9b;
+  }
+
+  #radio{
+    margin-top: 5px;
+    padding-left: 10px;
+    display: flex;
+  }
+
+  .gen{
+    padding-left: 5px;
+  }
+
+  .form-wrap .form-group input.ng-invalid.ng-touched{
+    border: 1px solid red ;
+  }
+
+  span,sup{
+    color: red;
+    font-size: small;
+  }
+
+
+  #symptom{
+    padding: 8px;
+    /* margin-left: 5px; */
+    margin-top: 10px;
+    width: 200px;
+    border: 1px white;
+    border-radius: 5px;
+    display: block;
+  }
+
+  button{
+    border:none;
+    padding:5px 20px;
+    border:1px solid white;
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
