@@ -1,0 +1,32 @@
+/* You can add global styles to this file, and also import other style files */
+
+h2 {
+    text-align: center;
+    padding-top: 60px;
+}
+
+p{
+    text-align: center;
+    padding: 0  20px;
+}
+
+span{
+    color: red;
+}
+
+button{
+    padding:6px 10px;
+    border: 2px white;
+    border-radius: 5px;
+}
+
+button:hover{
+    background-color: #2A6897;
+    color: white;
+}
+
+.display{
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 20px;
+}

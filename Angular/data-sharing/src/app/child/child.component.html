@@ -1,0 +1,18 @@
+<div class="container1">
+    <div class="child">
+        <h2>Child Component - 1</h2>
+    
+        <p>Data from parent : <span>{{parentData}}  </span></p>
+        <p>Data from Sibbling : <span>{{childData2}}</span></p>
+        <p>Data from Sibbling without parent: <span>{{dataFromSib1}}</span></p>
+
+
+<div class="display">
+    <!--to parent on click event-->
+    <button (click)="sayHello()"> Parent </button>
+    <button (click)="sayHelloToSibbling()"> Sibbling </button>
+    <button (click)="withoutParent1()"> Sibbling without parent</button>
+</div>
+        
+    </div>
+</div>

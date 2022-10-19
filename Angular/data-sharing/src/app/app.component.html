@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="parent">
+
+    <h2>Parent Component</h2>
+    <p>Data from Child : <span>{{message}}</span></p>
+    <!-- <input type="number" [(ngModel)]="alternateName"> -->
+  </div>
+ 
+</div>
+<div class="display">
+  <!--from child 1-->
+  <app-child 
+  (childEvent)="message=$event" 
+  (sibblingEvent)="sentToSib=$event" 
+  [parentData]="name" 
+  [childData2]="message1"></app-child>
+  
+  <!--from child 2-->
+  <app-child2 (childEvent1)="message=$event" (childEvent2)="message1=$event" [parentData1]="name" [childData1]="sentToSib"></app-child2>
+  
+
+</div>
+ 

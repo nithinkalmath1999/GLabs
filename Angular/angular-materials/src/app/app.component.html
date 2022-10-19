@@ -2,21 +2,37 @@
   <mat-card>
     <h2>Student Registration Form</h2>
 
+
+
+
+
+    <mat-expansion-panel hideToggle>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+         Name
+        </mat-panel-title>
+        <mat-panel-description>
+          Enter your name
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <div>
+        <mat-form-field class="example" appearance="fill">
+          <mat-label>First Name</mat-label>
+          <input matInput placeholder="Enter your First Name" value="">
+        </mat-form-field>
+      </div>
+  
+      <div>
+        <mat-form-field class="example" appearance="fill">
+          <mat-label>Last Name</mat-label>
+          <input matInput placeholder="Enter your Last Name"  value="">
+        </mat-form-field>
+      </div>
+
+    </mat-expansion-panel>
           <!-- form-field and  mat-input  -->
           
-    <div>
-      <mat-form-field class="example" appearance="standard">
-        <mat-label>First Name</mat-label>
-        <input matInput placeholder="Enter your First Name" value="">
-      </mat-form-field>
-    </div>
-
-    <div>
-      <mat-form-field class="example" appearance="fill">
-        <mat-label>Last Name</mat-label>
-        <input matInput placeholder="Enter your Last Name"  value="">
-      </mat-form-field>
-    </div>
+    
 
     <div class="example-container">
       <mat-form-field class="example" appearance="outline">

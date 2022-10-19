@@ -1,0 +1,12 @@
+/* .container{
+    padding-left: 20px;
+} */
+.child {
+    width: 500px;
+    /* height: 200px; */
+    background: #90c3eb;
+    color: white;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
