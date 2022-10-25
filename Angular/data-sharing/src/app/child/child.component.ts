@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input,Output, OnInit, OnChanges, SimpleChanges } from '@angular/core';
+import { Component, EventEmitter, Input, Output, OnInit, OnChanges, SimpleChanges } from '@angular/core';
 import { PublicService } from '../public.service';
 
 @Component({
@@ -6,32 +6,36 @@ import { PublicService } from '../public.service';
   templateUrl: './child.component.html',
   styleUrls: ['./child.component.css']
 })
-export class ChildComponent implements OnInit {
+export class ChildComponent implements OnInit, OnChanges {
 
-// from parent
- @Input() public parentData: string = '';
+  // from parent
+  @Input() public parentData: string = '';
 
- //To parent 
- @Output() public childEvent = new EventEmitter();
- 
- 
- @Input() public childData2: string = '';
- 
- @Output() public sibblingEvent = new EventEmitter();
+  //To parent 
+  @Output() public childEvent = new EventEmitter();
 
 
- dataFromSib1:string='';
+  @Input() public childData2: string = '';
 
-//  @Input() alternateNameValue :number=0;
+  @Output() public sibblingEvent = new EventEmitter();
 
- constructor( private pService : PublicService) { }
 
-//  ngOnChanges(changes: SimpleChanges): void {
-//    // this.parentData = this.parentData ;
-//    console.log("ngon",changes);
-//    this.alternateNameValue= changes.alternateNameValue.currentValue + 100;
-   
-//  }
+  dataFromSib1: string = '';
+
+  @Input()
+  alternateNameValue: number = 0;
+
+  constructor(private pService: PublicService) { }
+
+  ngOnChanges(changes: SimpleChanges): void {
+    console.log("ngon", changes);
+    // if(changes.alternateNameValue && changes.alternateNameValue.currentValue){
+    //   this.alternateNameValue = changes.alternateNameValue.currentValue + 100;
+    // }
+    // else{
+    //   this.alternateNameValue=0
+    // }
+  }
 
   ngOnInit(): void {
     this.pService.publicSubject2.subscribe(data => this.dataFromSib1 = data);
@@ -39,19 +43,19 @@ export class ChildComponent implements OnInit {
   }
 
 
-//To parent
-  sayHello(){
+  //To parent
+  sayHello() {
     this.childEvent.emit('"Hello, I am Child Component - 1"');
   }
 
   //To Sibbling
-  sayHelloToSibbling(){
+  sayHelloToSibbling() {
     this.sibblingEvent.emit('"Hello, I am your Sibbling"');
 
   }
 
-//To sibbling without parent
-withoutParent1(){
-  this.pService.sendData('"I am your Brother"');
-}
+  //To sibbling without parent
+  withoutParent1() {
+    this.pService.sendData('"I am your Brother"');
+  }
 }

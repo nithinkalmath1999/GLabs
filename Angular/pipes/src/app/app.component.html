@@ -1,0 +1,38 @@
+<!--     -->
+<div>
+  <h3>Built-in pipes</h3>
+  <div>{{lowerCaseExample | lowercase}}</div>
+  <div>{{upperCaseExample | uppercase}}</div>
+  <div>{{dateExample | date}}</div>
+  <div>{{jsonExample | json}}</div>
+  <div>{{currencyExample | currency}}</div>
+  <div>{{percentageExample | percent}}</div>
+</div><br><br>
+
+
+<!-- Parametrized pipes -->
+<div>
+  <h3>Parametrized pipes</h3>
+  <div>{{currencyExample | currency: 'INR'}}</div>
+  <div>{{dateExample | date: 'MMM-dd-yyyy'}}</div>
+  <div>{{percentageExample | percent:'3.1-1'}}</div>
+</div><br><br>
+
+<!-- Chaning pipes -->
+<div>
+  <h3>Chaning pipes</h3>
+
+  <div>{{currencyExample | currency: 'INR' | uppercase}}</div>
+  <div>{{dateExample | date: 'MMM-dd-yyyy' | lowercase}}</div>
+</div><br><br>
+
+<!-- Custom Pipes -->
+<div>
+  <h3>Custom pipes</h3>
+
+  <ul>
+    <li *ngFor="let user of users">
+      <div [innerHTML]="user.email | highlight:user.email"></div>
+    </li>
+  </ul>
+</div>

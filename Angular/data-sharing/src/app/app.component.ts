@@ -22,7 +22,7 @@ export class AppComponent {
   //msg from child 2 to child 1 through parent
   public sentToSib1 = "";
 
-  // alternateName: number=0;
+  alternateName: number=0;
 
   // alter(){
   //   this.name='Angular';

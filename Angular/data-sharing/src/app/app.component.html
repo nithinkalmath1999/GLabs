@@ -3,7 +3,7 @@
 
     <h2>Parent Component</h2>
     <p>Data from Child : <span>{{message}}</span></p>
-    <!-- <input type="number" [(ngModel)]="alternateName"> -->
+    <input type="number" [(ngModel)]="alternateName">
   </div>
  
 </div>
@@ -13,6 +13,7 @@
   (childEvent)="message=$event" 
   (sibblingEvent)="sentToSib=$event" 
   [parentData]="name" 
+  [alternateNameValue]="alternateName"
   [childData2]="message1"></app-child>
   
   <!--from child 2-->
