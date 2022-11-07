@@ -1,0 +1,12 @@
+<h1>Local Storage</h1>
+<div *ngIf="data" >
+  <p>Id : {{data.id}}</p>
+  <p>Name : {{data.name}}</p>
+  <p>Name : {{data.email}}</p>
+</div>
+<div class="btn">
+  <button (click)="savedata()" >Save Data</button>
+  <button (click)="getdata()" >Get Data</button>
+  <button (click)="clrdata()" >Clear Data</button>
+  
+</div>

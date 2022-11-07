@@ -1,0 +1,25 @@
+.bg{
+      background-color: #72798D;
+      width: 200px;
+      height: 200px;
+      border-radius: 100px;
+      margin: auto;
+      margin-top: 20%;
+
+}
+
+.bg1{
+      background-color: #6fa8dc;
+      width: 200px;
+      height: 200px;
+      border-radius: 20px;
+      margin: auto;
+      margin-top: 20%;
+}
+
+button{
+      margin: 20px;
+      margin-top: 80px;
+      border: none;
+      cursor: pointer;
+}

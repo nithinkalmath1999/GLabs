@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Responsive Design</title>
+      <style>
+            body{
+                  background: grey;
+                  color: white;
+                  text-align: center;
+                  padding-top: 100px;
+            }
+            h1{
+                  display: none;
+            }
+
+            /*SmartPhone*/
+            @media(max-width:500px){
+                  body{
+                        background: red;
+                  }
+
+                  #smartphone h1{
+                        display: block;
+                  }
+            }
+
+            /*Tablet*/
+            @media(min-width:501px) and (max-width:768px){
+                  body{
+                        background: blue;
+                  }
+
+                  #tablet h1{
+                        display: block;
+                  }
+            }
+
+            /*Normal*/
+            @media(min-width:769px) and (max-width:1200px){
+                  body{
+                        background: green;
+                  }
+
+                  #normal h1{
+                        display: block;
+                  }
+            }
+
+            /*Wide Scren*/
+            @media(min-width:1201px){
+                  body{
+                        background: black;
+                       
+                  }
+
+                  #wideScreen h1{
+                        display: block;
+                  }
+            }
+
+             /*Landscape*/
+             @media(max-height:500px){
+                  body{
+                        background: yellow;
+                  }
+
+                  #landScape h1{
+                        display: block;
+                  }
+            }
+      </style>
+</head>
+<body>
+      
+
+      <div id="wideScreen"><h1>Wide Screen</h1></div>
+      <div id="normal"><h1>Normal</h1></div>
+      <div id="tablet"><h1>Tablet</h1></div>
+      <div id="smartphone"><h1>Smart Phone</h1></div>
+      <div id="landScape"><h1>LandScape</h1></div>
+</body>
+</html>
